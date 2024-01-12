@@ -1,0 +1,172 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "op",
+          "type": "address"
+        }
+      ],
+      "name": "getOperatorLevel",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "oldOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pendingOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "op",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "level",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOperator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xfe894658011c94fa8cb919d1901353b43ba70536c375b09c909611bb0ef29c7d",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "transactionIndex": 0,
+    "gasUsed": "271736",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x0a27ad43b4b87b9a247b38d2eb5e19b05caf1c79fb431bc58539c2462f01b2cb",
+    "transactionHash": "0xfe894658011c94fa8cb919d1901353b43ba70536c375b09c909611bb0ef29c7d",
+    "logs": [],
+    "blockNumber": 1,
+    "cumulativeGasUsed": "271736",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "573dacd569188b5cf8be1c93d7b60f19",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"acceptOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"op\",\"type\":\"address\"}],\"name\":\"getOperatorLevel\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"oldOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pendingOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"op\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"level\",\"type\":\"uint256\"}],\"name\":\"setOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/core/Operators.sol\":\"Operators\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.4) (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n\\n    function _contextSuffixLength() internal view virtual returns (uint256) {\\n        return 0;\\n    }\\n}\\n\",\"keccak256\":\"0xa92e4fa126feb6907daa0513ddd816b2eb91f30a808de54f63c17d0e162c3439\",\"license\":\"MIT\"},\"contracts/core/Operators.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.9;\\n\\nimport \\\"@openzeppelin/contracts/utils/Context.sol\\\";\\n\\ncontract Operators is Context {\\n    // level 1: normal operator\\n    // level 2: rewards and feed manager\\n    // level 3: admin\\n    // level 4: owner\\n    mapping(address => uint256) operatorLevel;\\n\\n    address public oldOwner;\\n    address public pendingOwner;\\n\\n    modifier onlyOperator(uint256 level) {\\n        require(operatorLevel[_msgSender()] >= level, \\\"invalid operator\\\");\\n        _;\\n    }\\n\\n    constructor() {\\n        operatorLevel[_msgSender()] = 4;\\n    }\\n\\n    function setOperator(address op, uint256 level) external onlyOperator(4) {\\n        operatorLevel[op] = level;\\n    }\\n\\n    function getOperatorLevel(address op) public view returns (uint256) {\\n        return operatorLevel[op];\\n    }\\n\\n    function transferOwnership(address newOwner) external onlyOperator(4) {\\n        require(newOwner != address(0), \\\"zero address\\\");\\n\\n        oldOwner = _msgSender();\\n        pendingOwner = newOwner;\\n    }\\n\\n    function acceptOwnership() external {\\n        require(_msgSender() == pendingOwner, \\\"not pendingOwner\\\");\\n\\n        operatorLevel[_msgSender()] = 4;\\n        operatorLevel[oldOwner] = 0;\\n\\n        pendingOwner = address(0);\\n        oldOwner = address(0);\\n    }\\n}\",\"keccak256\":\"0x5a7fb8b043ddeb6889f88740999a50d69e370c6b4ca189eb5c3a06bd77a20df8\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b503360009081526020819052604081206004905561038b90819061003490396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063777541361461006757806379ba50971461007c578063df07560514610084578063e30c3978146100c0578063f2fde38b146100eb578063f487404f146100fe575b600080fd5b61007a610075366004610309565b610111565b005b61007a610188565b6100ad610092366004610333565b6001600160a01b031660009081526020819052604090205490565b6040519081526020015b60405180910390f35b6002546100d3906001600160a01b031681565b6040516001600160a01b0390911681526020016100b7565b61007a6100f9366004610333565b610222565b6001546100d3906001600160a01b031681565b3360009081526020819052604090205460049081111561016b5760405162461bcd60e51b815260206004820152601060248201526f34b73b30b634b21037b832b930ba37b960811b60448201526064015b60405180910390fd5b506001600160a01b03909116600090815260208190526040902055565b6002546001600160a01b0316336001600160a01b0316146101de5760405162461bcd60e51b815260206004820152601060248201526f3737ba103832b73234b733a7bbb732b960811b6044820152606401610162565b3360009081526020819052604080822060049055600180546001600160a01b0316835290822091909155600280546001600160a01b03199081169091558154169055565b336000908152602081905260409020546004908111156102775760405162461bcd60e51b815260206004820152601060248201526f34b73b30b634b21037b832b930ba37b960811b6044820152606401610162565b6001600160a01b0382166102bc5760405162461bcd60e51b815260206004820152600c60248201526b7a65726f206164647265737360a01b6044820152606401610162565b50600180546001600160a01b03199081163317909155600280549091166001600160a01b0392909216919091179055565b80356001600160a01b038116811461030457600080fd5b919050565b6000806040838503121561031c57600080fd5b610325836102ed565b946020939093013593505050565b60006020828403121561034557600080fd5b61034e826102ed565b939250505056fea26469706673582212200f3df07722434b5e817c679563127122fe3643b264eb63fa1c45b4be45ae390064736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063777541361461006757806379ba50971461007c578063df07560514610084578063e30c3978146100c0578063f2fde38b146100eb578063f487404f146100fe575b600080fd5b61007a610075366004610309565b610111565b005b61007a610188565b6100ad610092366004610333565b6001600160a01b031660009081526020819052604090205490565b6040519081526020015b60405180910390f35b6002546100d3906001600160a01b031681565b6040516001600160a01b0390911681526020016100b7565b61007a6100f9366004610333565b610222565b6001546100d3906001600160a01b031681565b3360009081526020819052604090205460049081111561016b5760405162461bcd60e51b815260206004820152601060248201526f34b73b30b634b21037b832b930ba37b960811b60448201526064015b60405180910390fd5b506001600160a01b03909116600090815260208190526040902055565b6002546001600160a01b0316336001600160a01b0316146101de5760405162461bcd60e51b815260206004820152601060248201526f3737ba103832b73234b733a7bbb732b960811b6044820152606401610162565b3360009081526020819052604080822060049055600180546001600160a01b0316835290822091909155600280546001600160a01b03199081169091558154169055565b336000908152602081905260409020546004908111156102775760405162461bcd60e51b815260206004820152601060248201526f34b73b30b634b21037b832b930ba37b960811b6044820152606401610162565b6001600160a01b0382166102bc5760405162461bcd60e51b815260206004820152600c60248201526b7a65726f206164647265737360a01b6044820152606401610162565b50600180546001600160a01b03199081163317909155600280549091166001600160a01b0392909216919091179055565b80356001600160a01b038116811461030457600080fd5b919050565b6000806040838503121561031c57600080fd5b610325836102ed565b946020939093013593505050565b60006020828403121561034557600080fd5b61034e826102ed565b939250505056fea26469706673582212200f3df07722434b5e817c679563127122fe3643b264eb63fa1c45b4be45ae390064736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7339,
+        "contract": "contracts/core/Operators.sol:Operators",
+        "label": "operatorLevel",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 7341,
+        "contract": "contracts/core/Operators.sol:Operators",
+        "label": "oldOwner",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 7343,
+        "contract": "contracts/core/Operators.sol:Operators",
+        "label": "pendingOwner",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

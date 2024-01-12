@@ -1,0 +1,49 @@
+{
+  "name": "dexpools-contracts",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Smart contracts in Solidity programming language for DexPools's CLOB exchange",
+  "private": true,
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "solidity-prettier": "prettier --write 'contracts/**/*.sol'",
+    "clean-contracts": "rimraf .openzeppelin/unknown-*.json",
+    "coverage": "npx hardhat coverage",
+    "export-abi": "yarn run hardhat export-abi",
+    "deploy-mantle-testnet": "npx hardhat run scripts/deploy/00_deploy_All.js --network mantleTestnet"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "0.3.1",
+    "@ethersproject/experimental": "5.5.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "2.1.8",
+    "@nomiclabs/hardhat-waffle": "2.0.1",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0",
+    "@openzeppelin/hardhat-upgrades": "1.12.0",
+    "@pythnetwork/pyth-evm-js": "^1.1.0",
+    "@pythnetwork/pyth-sdk-solidity": "^2.2.0",
+    "bignumber.js": "9.0.1",
+    "chai": "4.3.4",
+    "dotenv": "10.0.0",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.5.1",
+    "hardhat": "^2.13.0",
+    "hardhat-abi-exporter": "^2.8.0",
+    "hardhat-contract-sizer": "2.1.1",
+    "hardhat-deploy": "^0.11.45",
+    "hardhat-deploy-ethers": "^0.4.1",
+    "hardhat-watcher": "^2.1.1",
+    "keccak256": "1.0.6",
+    "merkletreejs": "0.2.27",
+    "metis-sourcecode-verify": "^0.0.3",
+    "neat-csv": "6.0.1",
+    "rimraf": "3.0.2",
+    "solidity-coverage": "^0.8.2"
+  },
+  "devDependencies": {
+    "ts-node": "8.10.2",
+    "typescript": "3.9.4"
+  }
+}
